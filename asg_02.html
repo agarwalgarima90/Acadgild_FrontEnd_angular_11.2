@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="acadgild">
+	<head>
+		<title>Assignment 11.2</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+		<script>
+			var myapp = angular.module('acadgild', []);
+
+			myapp.controller('mycontroller1', function($scope) {
+				$scope.showAlert = function() {
+					alert("NgClick Event triggered");
+				}
+			});
+
+		</script>
+	</head>
+	<body>
+		<div ng-controller="mycontroller1">
+			<button id="btn" ng-click="showAlert()">NgClick Event</button>
+		</div>
+	</body>
+</html>
